@@ -26,7 +26,7 @@ file_txt.writelines(t1)
 file_txt.writelines("\n")
 
 
-*Now, we need to assume the hits from a particular IP. Here we are assuming that if a particular IP is hitting for more than 15 times then it would be an attck*
+*Now, we need to assume the hits from a particular IP. Here we are assuming that if a particular IP is hitting for more than 15 times then it would be an attack*
 
 No_of_IPs = 15
 R_No_of_IPs = No_of_IPs +10
@@ -36,3 +36,19 @@ R_No_of_IPs = No_of_IPs +10
       ip_hdr = struct.unpack("!8sB3s4s4s",ipheader)
       IP = socket.inet_ntoa(ip_hdr[3])
       print "The Source of the IP is:", IP
+
+The following line of code will check whether the IP exists in dictionary or not. If it exists then it will increase it by 1.
+
+if dict.has_key(IP):
+   dict[IP] = dict[IP]+1
+   print dict[IP]
+The next line of code is used to remove redundancy.
+
+if(dict[IP] > No_of_IPs) and (dict[IP] < R_No_of_IPs) :
+   line = "DDOS attack is Detected: "
+   file_txt.writelines(line)
+   file_txt.writelines(IP)
+   file_txt.writelines("\n")
+else:
+   dict[IP] = 1
+After running the above script, we will get the result in a text file. According to the script, if an IP hits for more than 15 times then it would be printed as DDoS attack is detected along with that IP address.
