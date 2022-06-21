@@ -52,5 +52,5 @@ with ThreadPoolExecutor(max_workers=args.threads) as executor:
         executor.submit(sendRequest, url, urlId)
         
 
-*This code was taken from https://github.com/takito1812/log4j-detect/blob/main/log4j-detect.py*
-
+*This code was taken from https://github.com/takito1812/log4j-detect/blob/main/log4j-detect.py *
+ 
