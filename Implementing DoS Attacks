@@ -1,5 +1,5 @@
- Large number of packets can be sent to a web server from multiple IP's and multiple ports.
- This following python script helps implement this type of DoS attack
+ *Large number of packets can be sent to a web server from multiple IP's and multiple ports.
+ This following python script helps implement this type of DoS attack*
 
 
 Import random
@@ -25,4 +25,4 @@ while True:
       i= i+1
       
       
-     This code has been taken from https://www.tutorialspoint.com/python_penetration_testing/python_penetration_testing_dos_and_ddos_attack.htm#
+     *This code has been taken from https://www.tutorialspoint.com/python_penetration_testing/python_penetration_testing_dos_and_ddos_attack.htm# *
