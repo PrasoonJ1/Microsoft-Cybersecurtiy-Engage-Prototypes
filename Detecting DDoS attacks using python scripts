@@ -53,4 +53,4 @@ if(dict[IP] > No_of_IPs) and (dict[IP] < R_No_of_IPs) :
    file_txt.writelines("\n")
 else:
    dict[IP] = 1
-*After running the above script, we will get the result in a text file. According to the script, if an IP hits for more than 15 times then it would be printed as a DDoS attack*
+*After running the above script, we will get the result in a text file. According to the script, if an IP hits for more than 15 times then it would be printed as a DDoS attack along with its IP address*
