@@ -37,4 +37,4 @@ if __name__ == '__main__':
         detect_device()   
         
         
- *This code was taken from: https://github.com/Ming-Shu/How-to-detect-USB-plug-in-on-Windows-using-Python/blob/master/Detect%20Device.py*
+ *This code was taken from: https://github.com/Ming-Shu/How-to-detect-USB-plug-in-on-Windows-using-Python/blob/master/Detect%20Device.py *
